@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Página Pessoal</title>
+  <title>Projeto ES - Sistema de Controle de Acesso</title>
 
   <!-- Meta descrição para SEO -->
-  <meta name="description" content="Página pessoal de Viviane de Menezes Ramalho Souza, apresentando formação, experiência e contato.">
+  <meta name="description" content="Página do projeto ES - Sistema de controle de acesso escolar com crachás QR Code">
 
   <!-- CSS do Bootstrap -->
   <link rel="stylesheet"
@@ -16,7 +16,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
 
-<!-- CSS customizado para o rodapé ficar fixo embaixo -->
+  <!-- CSS customizado -->
   <style>
     html, body {
       height: 100%;
@@ -31,17 +31,47 @@
     main {
       flex: 1;
     }
+    
+    .section-title {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    
+    .feature-icon {
+      font-size: 2rem;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+    
+    .diagram-container {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
   </style>
 
 </head>
 
 <body>
-  
-
   <!-- Barra de navegação -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Viviane de Menezes Ramalho Souza</a>
+      <a class="navbar-brand" href="#">Projeto ES</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -53,13 +83,19 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="formacao.html">Formação Acadêmica</a>
+            <a class="nav-link" href="#objetivo">Objetivo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="experiencia.html">Experiência Profissional</a>
+            <a class="nav-link" href="#requisitos">Requisitos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contato.html">Contato</a>
+            <a class="nav-link" href="#diagramas">Diagramas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipe">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
           </li>
         </ul>
       </div>
@@ -73,37 +109,185 @@
     </ol>
   </nav>
 
-  <!-- Conteúdo principal  (main)-->
+  <!-- Conteúdo principal -->
   <main class="container my-5">
-    <h1 class="text-center mb-4">Bem-vindo(a)!</h1>
-   
-    <h1 class="text-center mb-4">Olá, eu sou Viviane! 👋</h1>
-    <p class="text-center lead">
-      Sou professora e entusiasta da tecnologia, apaixonada por educação e inovação.
-      Nesta página, compartilho um pouco sobre minha trajetória acadêmica e profissional.
-    </p>
-  </section>
-</main>
+    <!-- Introdução -->
+    <section class="mb-5">
+      <h1 class="text-center mb-4">Sistema de Controle de Acesso Escolar</h1>
+      <p class="text-center lead">
+        Um sistema inovador para controle de acesso em instituições de ensino utilizando crachás com QR Code
+      </p>
+      <div class="row mt-4">
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">🔐</div>
+          <h4>Segurança</h4>
+          <p>Controle de acesso eficiente e seguro para alunos e funcionários</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">📊</div>
+          <h4>Relatórios</h4>
+          <p>Geração automática de relatórios de presença e acesso</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="feature-icon">⚡</div>
+          <h4>Eficiência</h4>
+          <p>Processo rápido e automatizado de identificação</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Objetivo -->
+    <section id="objetivo" class="mb-5">
+      <h2 class="section-title">Objetivo do Projeto</h2>
+      <p>Desenvolver um sistema de controle de acesso para instituições de ensino que utilize crachás com QR Code para identificação de alunos, proporcionando:</p>
+      <ul>
+        <li>Maior segurança no acesso às dependências da escola</li>
+        <li>Controle eficiente da presença dos alunos</li>
+        <li>Geração automática de relatórios para administradores</li>
+        <li>Notificação em tempo real para responsáveis sobre a entrada e saída dos alunos</li>
+      </ul>
+    </section>
+
+    <!-- Público-alvo -->
+    <section class="mb-5">
+      <h2 class="section-title">Público-Alvo</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Instituições de Ensino</h4>
+          <p>Escolas, faculdades e outras instituições educacionais que necessitam de controle de acesso eficiente.</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Usuários do Sistema</h4>
+          <ul>
+            <li>Alunos</li>
+            <li>Responsáveis</li>
+            <li>Administradores escolares</li>
+            <li>Porteiros/Equipe de segurança</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requisitos -->
+    <section id="requisitos" class="mb-5">
+      <h2 class="section-title">Requisitos do Sistema</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Requisitos Funcionais</h4>
+          <ul>
+            <li>Cadastro de alunos, responsáveis e administradores</li>
+            <li>Geração de crachás com QR Code único para cada aluno</li>
+            <li>Leitura de QR Code pelos porteiros para registro de acesso</li>
+            <li>Emissão de relatórios de presença e acesso</li>
+            <li>Consulta de horários de entrada e saída por parte dos responsáveis</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Requisitos Não-Funcionais</h4>
+          <ul>
+            <li>Interface intuitiva e de fácil utilização</li>
+            <li>Sistema responsivo para acesso em diferentes dispositivos</li>
+            <li>Segurança no armazenamento de dados dos usuários</li>
+            <li>Performance otimizada para leitura rápida dos QR Codes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Histórias de Usuário -->
+    <section class="mb-5">
+      <h2 class="section-title">Histórias de Usuário</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Como Administrador</h5>
+          <p class="card-text">Quero cadastrar alunos no sistema para que possam receber seus crachás de acesso.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Como Aluno</h5>
+          <p class="card-text">Quero usar meu crachá com QR Code para acessar a escola de forma rápida e segura.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Como Porteiro</h5>
+          <p class="card-text">Quero ler o QR Code dos crachás para registrar a entrada e saída dos alunos.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Como Responsável</h5>
+          <p class="card-text">Quero consultar os horários de entrada e saída do meu filho para acompanhar sua frequência escolar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diagramas -->
+    <section id="diagramas" class="mb-5">
+      <h2 class="section-title">Diagramas do Sistema</h2>
+      <div class="diagram-container">
+        <h4>Diagrama de Classes</h4>
+        <p>O diagrama abaixo representa a estrutura de classes do sistema:</p>
+        <div class="text-center">
+          <img src="Diagrama de classes - Projeto ES.drawio.png" alt="Diagrama de Classes do Sistema" class="img-fluid">
+        </div>
+        <div class="mt-3">
+          <h5>Principais Entidades:</h5>
+          <ul>
+            <li><strong>Aluno:</strong> Representa os estudantes da instituição</li>
+            <li><strong>Cracha:</strong> Contém o QR Code de identificação</li>
+            <li><strong>Porteiro:</strong> Responsável pela leitura dos QR Codes</li>
+            <li><strong>Administrador:</strong> Gerencia o sistema e gera relatórios</li>
+            <li><strong>Responsável:</strong> Acompanha o acesso dos alunos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="mb-5">
+      <h2 class="section-title">Nossa Equipe</h2>
+      <div class="row">
+        <div class="col-md-4 team-member">
+          <!-- Imagem placeholder - substituir por foto real -->
+          <div style="width:150px; height:150px; background-color:#ddd; border-radius:50%; margin:0 auto 15px;"></div>
+          <h4>Viviane de Menezes Ramalho Souza</h4>
+          <p>Professora e Desenvolvedora</p>
+          <p>Especialista em Tecnologia Educacional</p>
+        </div>
+        <div class="col-md-4 team-member">
+          <!-- Imagem placeholder - substituir por foto real -->
+          <div style="width:150px; height:150px; background-color:#ddd; border-radius:50%; margin:0 auto 15px;"></div>
+          <h4>Membro da Equipe 2</h4>
+          <p>Desenvolvedor Full Stack</p>
+          <p>Especialista em Sistemas Web</p>
+        </div>
+        <div class="col-md-4 team-member">
+          <!-- Imagem placeholder - substituir por foto real -->
+          <div style="width:150px; height:150px; background-color:#ddd; border-radius:50%; margin:0 auto 15px;"></div>
+          <h4>Membro da Equipe 3</h4>
+          <p>Analista de Sistemas</p>
+          <p>Especialista em Banco de Dados</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
-
-<footer class="bg-dark text-white text-center py-4 mt-auto">
-  <div class="container">
-    <p class="mb-1">Contato: viviane.souza@ifal.edu.br|</p>
-    <p class="mb-0">&copy; 2025 Viviane Menezes. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p class="mb-1">Contato: viviane.souza@ifal.edu.br</p>
+      <p class="mb-0">&copy; 2025 Projeto ES. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <!-- Scripts do Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGaR9G4Q9ANmF6YFZ94i+6oDkG"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3G4Q9ANmF6YFZ94i+6oDkG"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
